@@ -1,0 +1,69 @@
+1.In inventorySystem class:
+
+Line 6- Mysterious Name/Poor Name
+The class name (inventoryManagementSystem) uses inconsistent casing. It should be InventoryManagementSystem for proper camel casing.
+
+Line 7 - Long Method
+
+The main method (lines 5–22) contains multiple unrelated operations (e.g., initializing warehouses, adding products, processing orders, generating reports) and could be split into smaller helper methods
+
+Shotgun Surgery
+Any change in the initialization logic of warehouses or products will require changes in multiple places within the main method.
+
+
+
+2. inventorySystem class:
+
+Line 6- Long Class
+
+Line 41,132- Long method (addProduct & processOrder)
+
+Line 17,41,132,132- Primitive Obsession: 
+The discountType is a String (line 17), prone to errors like typos. It should be replaced with an enum.
+Product details in addProduct are passed as individual parameters (String name, double price, etc., line 41).
+processOrder uses ArrayList<Integer> for product IDs and quantities (line 132).
+customerInfo is a single String (line 132).
+
+Line 78 - Conditional Complexity (Switch Statement)
+
+Duplicated Code:
+Discount handling logic is duplicated across calculateFinalPrice  and globalInventoryData.calculateDiscount .
+
+Line 77-99- Feature envy :The calculateFinalPrice method (lines 61–84) depends on discount-related logic, which may be better placed in a dedicated Discount class or utility.
+
+Line -41 : Long Parameter List
+
+
+
+3. globalInventoryData class:
+
+line 12,13 -Primitive Obsession
+
+Shotgun Surgery: Adding new fields or functionality to products, warehouses, or orders would require changes across all collections and related methods.
+
+
+
+4. Warehouse Class:
+
+line 8: Inconsistent naming 
+line 5: primitive data obsession: The location is a String , which limits extensibility. Using an Address class would be more robust.
+
+
+6. reportScheduler Class:
+line 4: Free Loader (Lazy Class)
+This class has a single static method (scheduleReport, line 5) and does not justify its existence. It could be merged into another class.
+
+
+7. AppTest class:
+
+
+Line 10- Mysterious Name/Poor Name:The class name AppTest is vague and does not indicate its purpose. A more descriptive name like InventorySystemTest would be better.
+
+Free Loader (Lazy Class):
+The test methods are minimal and do not actually test the functionality of the inventory system.
+
+Shotgun Surgery:
+Adding a new feature to the system would require updates to multiple test cases in this class, especially since they lack proper organization.
+
+
+
