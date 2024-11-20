@@ -67,6 +67,7 @@ public class IceCreamShopTest {
 
     // Test 6: Validate Invoice Generation
 
+
     @Test
     void testInvoiceGeneration() throws IOException {
         // Prepare Order
@@ -89,22 +90,23 @@ public class IceCreamShopTest {
             while ((line = reader.readLine()) != null) {
                 invoiceContent.append(line).append("\n");
             }
-            // Validate Content
-            String expectedInvoice = """
-                Ice Cream Shop Invoice
-                Strawberry Swirl: $2.75
-                Crushed Oreo: $0.85
-                Crushed Oreo: $0.85
-                Waffle Cone: $5.00
-                Subtotal: $9.45
-                Tax: $0.76
-                Total Amount Due: $10.21
-                """;
-            assertEquals(expectedInvoice.trim(), invoiceContent.toString().trim());
         }
+
+
+        String expectedInvoice = """
+        Ice Cream Shop Invoice
+        Crushed Oreo - 2 times: $1.70
+        Strawberry Swirl - 1 time: $2.75
+        Subtotal: $9.45
+        Tax: $0.76
+        Total Amount Due: $10.21
+        """;
+
+        assertEquals(expectedInvoice.trim(), invoiceContent.toString().trim());
     }
 
 
 
 
-    }
+
+}

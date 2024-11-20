@@ -1,0 +1,8 @@
+Ice Cream Shop Invoice
+Mint Chocolate Chip - 2 times: $5.60
+Chocolate Fudge - 1 time: $3.00
+Sprinkles - 1 time: $0.30
+Fresh Strawberries - 2 times: $2.00
+Subtotal: $15.90
+Tax: $1.27
+Total Amount Due: $17.17

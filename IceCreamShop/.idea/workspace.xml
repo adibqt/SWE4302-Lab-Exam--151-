@@ -9,12 +9,8 @@
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IceCreamShop.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/IceCreamComponent.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/IceCreamFlavor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IceCreamShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IceCreamShop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IceCreamShopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IceCreamShopTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +39,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.IceCreamShop.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.IceCreamShopTest.testInvoiceGeneration.executor": "Run",
     "JUnit.IceCreamShopTest.testOrderSubtotalWithoutWaffleCone.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -99,7 +97,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1732096248285</updated>
-      <workItem from="1732096249322" duration="1447000" />
+      <workItem from="1732096249322" duration="2576000" />
     </task>
     <servers />
   </component>
